@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/** 
- * main - Entry point
+/**
+ *main - Entry point
  * Description: 'Prints text using printf'
  * Return: Always 0 (Success)
  */
