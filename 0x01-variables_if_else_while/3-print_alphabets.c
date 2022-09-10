@@ -17,8 +17,11 @@ int main(void)
 
 	for (i = 0; i < 27; i++)
 	{
-		upper_case = toupper((unsigned char) alphabet[i]);
 		putchar(alphabet[i]);
+	}
+	for (i=0; i < 27; i++)
+	{
+		upper_case = toupper((unsigned char) alphabet[i]);
 		putchar(upper_case);
 	}
 	return (0);
