@@ -24,5 +24,6 @@ int main(void)
 		upper_case = toupper((unsigned char) alphabet[i]);
 		putchar(upper_case);
 	}
+	putchar('\n');
 	return (0);
 }
