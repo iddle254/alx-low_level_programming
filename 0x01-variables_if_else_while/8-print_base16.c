@@ -9,12 +9,18 @@
  */
 int main(void)
 {
-	unsigned char i;
+	int i;
+	char alphabet;
 
-	for (i = '0'; i <= 'f'; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		putchar(i);
-		i++;
+		putchar(i + '0');
+	}
+	alphabet = 'a';
+	while (alphabet <= 'f')
+	{
+		putchar(alphabet);
+		alphabet ++;
 	}
 	putchar('\n');
 
