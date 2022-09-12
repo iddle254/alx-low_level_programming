@@ -9,23 +9,18 @@
  */
 int main(void)
 {
-	int i;
-	char alphabet[27] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-		'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'
-		, 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-	char letter;
+	char  i;
 
-	for (i = 0; i < 27; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		letter = alphabet[i];
-		switch (letter)
+		switch (i)
 		{
 			case 'e':
 				continue;
 			case 'q':
 				continue;
 			default:
-				putchar(alphabet[i]);
+				putchar(i);
 				break;
 		}
 	}
