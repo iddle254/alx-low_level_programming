@@ -4,7 +4,7 @@
  **/
 int main(void)
 {
-	char to_print[], printed[];
+	char to_print[20], printed[20];
 
 	to_print = "_putchar";
 	printed = _putchar(to_print);
