@@ -9,9 +9,9 @@ int _putchar(char print_this[])
 {
 	int i, c;
 
-	for (i = 0; (c = getchar()) != '\n', i++)
+	while ((c = getchar()) != '\n')
 	{
-		putchar(print_this[i]);
+		putchar(c);
 	}
 	return (0);
 	
