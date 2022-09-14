@@ -3,11 +3,11 @@
 /**
  * Main description goes here
  **/
-int _putchar(char print_this[]);
+int _putchar(char);
 
-int _putchar(char print_this[])
+int _putchar(char)
 {
-	int i, c;
+	int c;
 
 	while ((c = getchar()) != '\n')
 	{
