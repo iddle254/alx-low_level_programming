@@ -6,12 +6,13 @@
 
 int _putchar(char print_this[])
 {
-	int i, c;
+	int i;
 
-	for (i = 0; (c = getchar()) != '\n', i++)
+	for (i = 0; print_this[i] != '\0'; i++)
 	{
 		putchar(print_this[i]);
 	}
+	putchar('\n');
 	return (0);
 	
 }
