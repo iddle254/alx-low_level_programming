@@ -9,7 +9,9 @@
  */
 int _islower(int c)
 {
-	if (islower(c))
+	int check = c
+
+	if (islower(check))
 	{
 		return (1);
 	}
