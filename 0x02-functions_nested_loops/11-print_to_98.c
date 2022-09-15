@@ -16,5 +16,5 @@ void print_to_98(int n)
 		else if (n < 98)
 			++n;
 	}
-	printf("%d", 98);
+	printf("%d\n", 98);
 }
