@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <limits.h>
 #include "main.h"
 /**
  * print_last_digit - Entry point
