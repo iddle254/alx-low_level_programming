@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * _islower - Entry point
- * Parameter: c
+ * @parameterx: c
  * Description: checks for lowercase letters
  * Return: 1 if lowercase 0 otherwise
  */
