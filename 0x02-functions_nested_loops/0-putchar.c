@@ -9,8 +9,9 @@ int main(void)
 {
 	char to_print[] = "_putchar";
 	int i;
+	int len = strlen(to_print);
 
-	for (i = 0; i < strlen(to_print); i++)
+	for (i = 0; i < len; i++)
 	{
 		_putchar(to_print[i]);
 	}
