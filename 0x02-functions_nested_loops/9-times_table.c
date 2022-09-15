@@ -13,16 +13,14 @@ void times_table(void)
 		for (col = 0; col < 10; ++col)
 		{
 			product = row * col;
-			if (product > 10)
+			if (product / 10 > 0)
 			{
-				fd = product / 10;/*first digit*/
-				ld = product % 10; /*last digit*/
+				_putchar((product / 10) + '0');
 			} else 
 			{
-			_putchar(product + '0');
+				_putchar(' ');
 			}
-			_putchar(fd + '0');
-			_putchar(ld + '0');
+			_putchar((product % 10) + '0');
 			while (col != 9)
 			{
 				_putchar(',');
