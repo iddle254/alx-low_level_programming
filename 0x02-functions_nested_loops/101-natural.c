@@ -24,4 +24,5 @@ void multiples(void)
 int main(void)
 {
 	multiples();
+	return (0);
 }
