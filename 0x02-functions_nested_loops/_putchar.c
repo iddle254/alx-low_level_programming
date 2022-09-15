@@ -1,17 +1,13 @@
 #include <string.h>
 #include <stdio.h>
+#include "main.h"
 /**
  * Main description goes here
  **/
 
-int _putchar(char print_this)
+int _putchar(char c)
 {
-	int i;
-
-	for (i = 0; print_this[i] != '\0'; i++)
-	{
-		putchar(print_this[i]);
-	}
+	putchar(c);
 	putchar('\n');
 	return (0);
 	

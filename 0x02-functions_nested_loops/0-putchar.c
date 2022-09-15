@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * _putchar - Entry point
+ * main - Entry point
  * Description: prints _putchar
  * Return: 0
  */
-int _putchar(void)
+int main(void)
 {
-	char to_print[n] = "_putchar";
+	char to_print[8] = "_putchar";
 	int i;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < 9; i++)
 	{
 		_putchar(to_print[i]);
 	}
