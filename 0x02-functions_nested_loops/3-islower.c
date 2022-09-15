@@ -9,7 +9,7 @@
  */
 int _islower(int c)
 {
-	int check = c
+	int check = c;
 
 	if (islower(check))
 	{
