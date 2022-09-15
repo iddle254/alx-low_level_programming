@@ -5,8 +5,9 @@
  * _islower - Entry point
  * Description: checks for lowercase letters
  * Return: 1 if lowercase 0 otherwise
+ * '@parameter' - c
  */
-int _islower(int c/*params: c - letter to check*/)
+int _islower(int c)
 {
 	if (islower(c))
 	{
