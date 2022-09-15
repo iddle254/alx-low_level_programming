@@ -20,3 +20,8 @@ void multiples(void)
 	}
 	printf("%d\n", total_sum);
 }
+
+int main(void)
+{
+	multiples();
+}
