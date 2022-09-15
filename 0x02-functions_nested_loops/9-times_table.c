@@ -17,11 +17,12 @@ void times_table(void)
 			{
 				fd = product / 10;/*first digit*/
 				ld = product % 10; /*last digit*/
-				_putchar(fd + '0');
-				_putchar(ld + '0');
-			} else {
+			} else 
+			{
 			_putchar(product + '0');
 			}
+			_putchar(fd + '0');
+			_putchar(ld + '0');
 			while (col != 9)
 			{
 				_putchar(',');
