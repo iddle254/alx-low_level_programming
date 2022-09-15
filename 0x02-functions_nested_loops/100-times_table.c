@@ -8,12 +8,14 @@
  */
 void print_times_table(int n)
 {
-	int r, c;
+	int r, c, prod;
+
 	for (r = 0; r <= n; r++)
 	{
 		for (c = 0; c <= n; c++)
 		{
-			printf("%d", r * c);
+			prod = r * c;
+			printf("%d", prod);
 			while (c != n)
 			{
 				printf(", ");
