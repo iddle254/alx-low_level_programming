@@ -3,7 +3,8 @@
 /* ^^ these are the include guards */
 /* Prototypes for the functions */
 /* Sums two ints */
-int _putchar(char c[]);
+int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
+int _islower(int c);
 #endif
