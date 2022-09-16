@@ -10,7 +10,7 @@ void fibonacci_even(void)
 	int count = 3;
 	long int first = 1, second = 2, next = first + second, even_sum = 0;
 
-	while (first <= 4000000 && second <=4000000)
+	while (first <= 4000000 || second <= 4000000)
 	{
 		if ((first % 2) == 0)
 			even_sum += first;
