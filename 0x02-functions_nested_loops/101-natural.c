@@ -21,7 +21,7 @@ void multiples(void)
 	printf("%d\n", total_sum);
 }
 
-/**                                                                                                                                                             
+/**
  * main - Entry point
  * Description: calls muliples function
  * Return: null
