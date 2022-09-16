@@ -8,7 +8,7 @@
 void fibonacci_even(void)
 {
 	int count = 3;
-	long int first = 1, second = 2, next = first + second, even_sum;
+	long int first = 1, second = 2, next = first + second, even_sum = 0;
 
 	if (next <= 4000000)
 	{
