@@ -12,8 +12,10 @@ void fibonacci_even(void)
 
 	if (next <= 4000000)
 	{
-		((first % 2) == 0) ? even_sum += first : ;;
-		((second % 2) == 0) ? even_sum += second : ;;
+		if ((first % 2) == 0)
+			even_sum += first;
+		if ((second % 2) == 0)
+			even_sum += second;
 		first = second;
 		second = next;
 		next = first + second;
