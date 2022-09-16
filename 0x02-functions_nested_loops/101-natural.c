@@ -7,8 +7,8 @@
  */
 void multiples(void)
 {
-	int curr_num = 3;
-	int total_sum;
+	int curr_num = 0;
+	int total_sum = 0;
 
 	while (curr_num < 1024)
 	{
@@ -20,6 +20,12 @@ void multiples(void)
 	}
 	printf("%d\n", total_sum);
 }
+
+/**                                                                                                                                                             
+ * main - Entry point
+ * Description: calls muliples function
+ * Return: null
+ */ 
 
 int main(void)
 {
