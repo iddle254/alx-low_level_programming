@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 /**
  * mul - multiplies two integers
  * @a: param1
