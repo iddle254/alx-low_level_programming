@@ -25,8 +25,7 @@ void multiples(void)
  * main - Entry point
  * Description: calls muliples function
  * Return: null
- */ 
-
+ */
 int main(void)
 {
 	multiples();
