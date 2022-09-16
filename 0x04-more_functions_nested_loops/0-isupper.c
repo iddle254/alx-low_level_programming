@@ -7,5 +7,5 @@
  */
 int _isupper(int c)
 {
-	return isupper(c);
+	isupper(c) ? return (1) : return (0);
 }
