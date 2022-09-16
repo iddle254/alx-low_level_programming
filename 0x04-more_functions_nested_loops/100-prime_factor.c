@@ -1,9 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-/*double _sqrt(double x)
-{
-
-}*/
 /**
  * largest_prime_factor - finds the largest prime factor
  *
@@ -19,7 +15,7 @@ void largest_prime_factor(long int num)
 	while (num % 2 == 0)
 		num = num / 2;
 	/*if n is odd*/
-	for (prime = 3; prime < sqrt(num);prime += 2)
+	for (prime = 3; prime < sqrt(num); prime += 2)
 	{
 		while (num % prime == 0)
 		{
@@ -29,7 +25,7 @@ void largest_prime_factor(long int num)
 	}
 	if (num > 2)
 		largest = num;
-	printf("%d\n", largest);
+	printf ("%d\n", largest);
 }
 /**
  * main - entry point
