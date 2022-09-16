@@ -8,7 +8,7 @@
 void fibonacci_50(void)
 {
 	int count = 3;
-	long int first=1, second = 2, next = first + second;
+	long int first = 1, second = 2, next = first + second;
 
 	printf("%lu, ", first);
 	printf("%lu, ", second);
@@ -16,7 +16,7 @@ void fibonacci_50(void)
 	{
 		if (count == 50)
 		{
-			printf("%lu ", next);
+			printf("%lu\n", next);
 		} else
 		{
 			printf("%lu, ", next);
