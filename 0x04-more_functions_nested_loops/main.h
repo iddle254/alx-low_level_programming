@@ -4,4 +4,5 @@
 /* Prototypes for the functions */
 /* Sums two ints */
 int _isupper(int c);
+int _isdigit(int c);
 #endif
