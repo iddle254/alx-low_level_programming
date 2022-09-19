@@ -3,4 +3,5 @@
 /* ^^ these are the include guards */
 /* Prototypes for the functions */
 void reset_to_98(int *n);
+void _putchar(char c);
 #endif
