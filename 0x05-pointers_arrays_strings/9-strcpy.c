@@ -18,5 +18,5 @@ char *_strcpy(char *dest, char *src)
 		++buffer;
 	}
 	dest[buffer] = '\0';
-	return *dest
+	return (*dest);
 }
