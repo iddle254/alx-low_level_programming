@@ -17,7 +17,7 @@ int main(void)
 		{
 			break;
 		}
-		for (j = 1; j < 10; j++)
+		for (j = 1; j < i; j++)
 		{
 			if (i == j)
 				continue;
