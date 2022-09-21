@@ -8,7 +8,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int counter;
+	int counter, to_becopied, next_counter;
 
 	for (counter = 0; dest[counter] != '\0'; ++counter)
 	{
@@ -19,5 +19,6 @@ char *_strcat(char *dest, char *src)
 		next_counter = ++counter;
 		dest[next_counter] = src[to_becopied];
 	}
+	dest[next_counter] = '\0';
 	return (dest);
 }
