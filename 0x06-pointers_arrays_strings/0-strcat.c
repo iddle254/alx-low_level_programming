@@ -4,7 +4,7 @@
  * @dest: copied here
  * @src: copy this
  * Description: cat two strings
- * Return - pointer to resulting dest
+ * Return: pointer to resulting dest
  */
 char *_strcat(char *dest, char *src)
 {
