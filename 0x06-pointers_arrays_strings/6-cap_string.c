@@ -2,7 +2,7 @@
 
 /**
  * *cap_string - capitalizes all words of a string
- * @s: pointer to char input array
+ * @str: pointer to char input array
  *
  * Return: capitalized string
  */
@@ -11,6 +11,7 @@ char *cap_string(char *str)
 	int i, j;
 
 	char delimeters[] = " \t\n,;.!?\"(){}";
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[0] >= 97 && str[0] <= 122)
