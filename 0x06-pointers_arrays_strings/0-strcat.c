@@ -8,17 +8,15 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int counter, to_becopied, next_counter;
+	int c, c2;
 
-	for (counter = 0; dest[counter] != '\0'; ++counter)
-	{
-		;
-	}
-	for (to_becopied = 0; src[to_becopied] != '\0'; ++to_becopied)
-	{
-		next_counter = ++counter;
-		dest[next_counter] = src[to_becopied];
-	}
-	dest[next_counter] = '\0';
+	c = 0;
+	while (dest[c])
+		c++;
+
+	for (c2 = 0; src[c2] ; c2++)
+		dest[c++] = src[c2];
+
+
 	return (dest);
 }
