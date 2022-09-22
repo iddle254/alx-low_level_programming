@@ -5,17 +5,18 @@
  * @src: copy this
  * @n: characters to copy
  * Description: copies a string
- * return: pointer to dest
+ * Return: pointer to dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int buffer = 0, counter;
+	int i;
 
-	for (counter = 0; counter < n && src[counter] != '\0'; ++counter)
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	while (i < n)
 	{
-		dest[buffer] = src[counter];
-		++buffer;
+		dest[i] = '\0';
+		i++;
 	}
-	dest[buffer] = '\0';
 	return (dest);
 }
