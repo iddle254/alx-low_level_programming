@@ -7,21 +7,29 @@
  *
  * Return: capitalized string
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int i, j;
+	int i = 0;
 
-	char delimeters[] = " \t\n,;.!?\"(){}";
+	while (s[i] != '\0')
 
-	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[0] >= 97 && str[0] <= 122)
-			str[0] = str[0] - 32;
-		for (j = 0; delimeters[j] != '\0'; j++)
+		if (s[i] >= 97 && s[i] <= 122)
 		{
-			if (str[i] == delimeters[j] && str[i + 1] >= 97 && str[i + 1] <= 122)
-				str[i + 1] = str[i + 1] - 32;
+			if (i == 0) /*check for null*/
+			{
+				s[i] -= 32;
+			}
+			if (s[i - 1] == 32 || s[i - 1] == 9 || s[i - 1] == 10 ||
+					s[i - 1] == 44 || s[i - 1] == 59 || s[i - 1] == 46 ||
+					s[i - 1] == 33 || s[i - 1] == 63 || s[i - 1] == 34 ||
+					s[i - 1] == 40 || s[i - 1] == 41 || s[i - 1] == 123 ||
+					s[i - 1] == 124)
+			{
+				s[i] -= 32;
+			}
 		}
+		i++;
 	}
-	return (str);
+	return (s);
 }
