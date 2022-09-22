@@ -4,7 +4,7 @@
  * @s1: param1
  * @s2: param2
  * Description: complares two strings
- * return: 0 if they match
+ * Return: 0 if they match
  */
 int _strcmp(char *s1, char *s2)
 {
