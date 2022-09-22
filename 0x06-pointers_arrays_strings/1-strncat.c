@@ -5,7 +5,7 @@
  * @src: copy this
  * @n: most bytes to be used by src
  * Description: cat two strings
- * Return - pointer to resulting dest
+ * Return: pointer to resulting dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -15,7 +15,8 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		;
 	}
-	for (to_becopied = 0; to_becopied < n && src[to_becopied] != '\0'; ++to_becopied)
+	for (to_becopied = 0; to_becopied < n && src[to_becopied]
+			!= '\0'; ++to_becopied)
 	{
 		dest[counter + to_becopied] = src[to_becopied];
 	}
