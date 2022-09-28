@@ -1,27 +1,30 @@
-/**
- * _sqrt_recursion_wrapper - a wrapper that does the recursion bit
- *
- * @n : input number
- * @k: minimum number to guess
- *
- * Return: square root of @n or -1
-*/
-int isqrt_rec(int k, int n) {
-	int next_k = (k + n/k) / 2;
-	if (k*k <= n && (k+1)*(k+1) > n)
-		return k;
-	else
-		return isqrt_rec(next_k, n);
+#include "main.h"
 
 /**
- * _sqrt_recursion - a function that returns the natural
- *                   square root of a number
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: number to be used
  *
- * @n: input number
- *
- * Return: square root
-*/
+ * Return: the square root of n
+ */
 int _sqrt_recursion(int n)
 {
-	return isqrt_rec(1, n);
+	if (n == 1 || n == 0)
+		return (n);
+	return (_sqrt(0, n));
+}
+
+/**
+ * _sqrt - returns the square root of a number
+ * @n: test number
+ * @x: squared number
+ *
+ * Return: the square root of n
+ */
+int _sqrt(int n, int x)
+{
+	if (n > x / 2)
+		return (-1);
+	else if (n * n == x)
+		return (n);
+	return (_sqrt(n + 1, x));
 }
