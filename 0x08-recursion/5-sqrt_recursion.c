@@ -12,6 +12,7 @@ int isqrt_rec(int k, int n) {
 		return k;
 	else
 		return isqrt_rec(next_k, n);
+}
 
 /**
  * _sqrt_recursion - a function that returns the natural
