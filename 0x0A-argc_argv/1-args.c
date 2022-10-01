@@ -21,8 +21,5 @@ int main(int argc, char __attribute__((unused)) *argv[])
 		i++;
 	}
 	printf("%d\n", m);
-
-
-	printf("%d\n", argc);
 	return (EXIT_SUCCESS);
 }
