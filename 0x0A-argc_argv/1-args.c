@@ -13,15 +13,15 @@
 
 int main(int argc, char __attribute__((unused)) *argv[])
 {
-	/**
-	*int i = 0, m;
-    *
-	*while (i < argc)
-	*{
-	*	m = i;
-    *    i++;
-	*}
-	*/
+	int i = 0, m;
+
+	while (i < argc)
+	{
+		m = i;
+		i++;
+	}
+	printf("%d\n", m);
+
 
 	printf("%d\n", argc);
 	return (EXIT_SUCCESS);
