@@ -10,51 +10,21 @@ int _putchar(char c);
 */
 
 /**
- * _memset - fills memory with a constant byte
+ * _length - get the length of strings
  *
- * @s: input pointer that represents memory block
- *     to fill
- * @b: characters to fill/set
- * @n: number of bytes to be filled
+ * @str: string to get length of
  *
- * Return: pointer to the filled memory area
+ * Return: length of string
 */
-
-char *_memset(char *s, char b, unsigned int n)
+int _length(char *str)
 {
-	unsigned int i = 0;
+	int i = 0;
 
-	while (i < n)
-	{
-		s[i] = b;
+	while (str[i] != '\0')
 		i++;
-	}
-	return (s);
+	return (i);
 }
 
-/**
- * _calloc - function that allocates memory
- *           for an array using memset
- *
- * @nmemb: size of array
- * @size: size of each element
- *
- * Return: pointer to new allocated memory
-*/
-
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	char *ptr;
-
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
-		return (NULL);
-	_memset(ptr, 0, nmemb * size);
-
-	return (ptr);
-}
 
 
 /**
