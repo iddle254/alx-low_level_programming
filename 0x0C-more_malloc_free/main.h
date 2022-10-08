@@ -1,4 +1,10 @@
+#ifndef FUNCTIONS_H_INCLUDED
+#define FUNCTIONS_H_INCLUDED
+/* ^^ these are the include guards */
+/* Prototypes for the functions */
+/* Sums two ints */
 #include <stdlib.h>
+#include <stdio.h>
 
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
@@ -68,3 +74,4 @@ int error_exit(void)
 	exit(98);
 }
 
+#endif
