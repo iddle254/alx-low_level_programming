@@ -25,22 +25,28 @@ int _putchar(char c)
  *         (excluding the null byte used to end output to strings)
 */
 int _printf(const char *format, ...){
-    va_list ap;
-    /*initialize index*/
-    unsigned int index;
-    /*memory to allocate*/
-    unsigned int format_length = malloc(sizeof(format) + 1)
-    /* initialize the argument list from the start */
-	va_start(ap, format_length);
+    if(format){
+        va_list ap;
+        /*initialize index*/
+        unsigned int index;
+        /*memory to allocate*/
+        unsigned int format_length = malloc(sizeof(format))
+        /* initialize the argument list from the start */
+        va_start(ap, format_length);
 
-	/* iterate through each argument*/
-	for (index = 0; index < format_length; index++)
-	{
-	    /*code goes here*/
+        /* iterate through each argument*/
+        for (index = 0; index < format_length; index++)
+        {
+            /*code goes here*/
+            _putchar(format[index])
+        }
+        /*clean up*/
+        va_end(ap);
+        free(index, format_length)
+        printf("\n");
+    }else{
+        return(0)
 
-	}
-	/*clean up*/
-	va_end(ap);
-	free(index, format_length)
-	printf("\n");
+    }
+
 }
