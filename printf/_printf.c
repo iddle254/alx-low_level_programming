@@ -32,11 +32,15 @@ int _printf(const char *format, ...){
     unsigned int format_length = malloc(sizeof(format) + 1)
     /* initialize the argument list from the start */
 	va_start(ap, format_length);
-	/*code goes here*/
 
+	/* iterate through each argument*/
+	for (index = 0; index < format_length; index++)
+	{
+	    /*code goes here*/
 
-
+	}
 	/*clean up*/
 	va_end(ap);
+	free(index, format_length)
 	printf("\n");
 }
