@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /* UTILITIES */
-listint_t *create_list(int *array, size_t size);
+/* listint_t *create_list(int *array, size_t size); */
 
 /* STRUCTS */
 /**
